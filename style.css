@@ -1,0 +1,102 @@
+/* Fonts & Base */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #000000, #000000);
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    color: #fff;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+.thin-center {
+  font-weight: 300;
+  text-align: center;
+}
+
+
+h2.highlight {
+    color: #ff5e57;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Checkbox Grid */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkbox-grid label {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.checkbox-grid input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox-grid label:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Buttons */
+.predict-btn, .back-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #000dff;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.predict-btn:hover, .back-btn:hover {
+    background-color: #0044ff;
+}

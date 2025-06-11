@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SanoGenie</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="card glass">
+            <h1>🧠 SanoGenie</h1>
+           <h4 class="thin-center">Predict...Prevent...Personalize</h4>
+
+            <p>Choose your symptoms and get instant diagnosis powered by Machine Learning</p>
+            <form action="/predict" method="POST">
+                <div class="checkbox-grid">
+                    {% for symptom in symptoms %}
+                        <label>
+                            <input type="checkbox" name="symptoms" value="{{ symptom }}">
+                            {{ symptom.replace('_', ' ').title() }}
+                        </label>
+                    {% endfor %}
+                </div>
+                <button type="submit" class="predict-btn">🔍 Predict Disease</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
