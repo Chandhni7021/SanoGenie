@@ -14,22 +14,6 @@ SenoGenie is an AI-powered webpage that predicts diseases based on user-input sy
 ![IMG-20250611-WA0051](https://github.com/user-attachments/assets/9b30bece-5a24-4112-a361-c80bfa157bc6)
 ![IMG-20250611-WA0053](https://github.com/user-attachments/assets/f5f802e6-3c4a-469b-9c78-88ed48f8a6f8)
 
-🗂️ Project Structure
-SenoGenie/
-│
-├── app.py # Flask web application
-├── model.pkl # Trained ML model
-│
-├── model/
-│ ├── data/
-│ │ ├── Training.csv # Symptom-Disease training dataset
-│ │ ├── description.csv # Disease descriptions
-│ │ └── diets.csv # Diet suggestions per disease
-│
-├── templates/
-│ ├── index.html # Symptom input form
-│ └── result.html # Result display page
-
 📊 Dataset Details
 
 - Training.csv: Contains binary-encoded symptoms and target diseases  
